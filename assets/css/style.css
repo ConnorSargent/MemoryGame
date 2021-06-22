@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Aurebesh;
+    src: url('../fonts/aurebesh.ttf');
+}
+
+.aurebesh {
+    font-family: "Aurebesh", sans-serif;
+}
+
 body {
     font-family: "Orbitron", sans-serif;
 }
@@ -44,4 +53,34 @@ body {
     background-size: cover;
     height: 100vh;
     width: 100vw;
+}
+
+/* _____ Welcome page text box _____ */
+
+.welcome-page-container {
+    margin-top: 50px;
+}
+
+
+/* _____ Welcome page card images _____ */
+
+.welcome-card {
+    height: 336px;
+    width: 240px;
+    margin-top: 80px;
+    transition: 0.5s;
+
+    background-color: red;
+}
+
+.welcome-card:not(:first-child) {
+    margin-left: -10rem;
+}
+
+.welcome-card:hover {
+    transform: translateY(-2rem);
+}
+
+.welcome-card:hover~.welcome-card {
+    transform: translateX(6rem);
 }
