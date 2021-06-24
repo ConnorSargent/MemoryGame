@@ -98,3 +98,38 @@ body {
 .welcome-card:hover~.welcome-card {
     transform: translateX(6rem);
 }
+
+/* ____________________________ Game Page ____________________________ */
+
+.memory-game {
+    width: calc(100% - 300px);
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-card {
+    height: 238px;
+    width: 170px;
+    margin: 5px;
+    position: relative;
+
+    background-color: red;
+}
+
+.game-card img {
+    height: 100%;
+    width: 100%;
+}
+
+.game-card-front,
+.game-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
