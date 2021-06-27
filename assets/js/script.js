@@ -23,6 +23,13 @@ function flipCard() {
     cardFlipped = false;
     secondCard = this;
 
-    console.log(firstCard,secondCard)
+    checkCards();
+}
+
+//_____ Check Card _____//
+function checkCards() {
+    let isMatch = firstCard.dataset.cards === secondCard.dataset.cards;
+
+    isMatch ? console.log("match") : console.log("no match");
 }
 
