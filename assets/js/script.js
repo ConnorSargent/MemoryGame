@@ -30,6 +30,22 @@ function flipCard() {
 function checkCards() {
     let isMatch = firstCard.dataset.cards === secondCard.dataset.cards;
 
-    isMatch ? console.log("match") : console.log("no match");
+    isMatch ? cardsMatch() : cardsDontMatch();
+
+    console.log(firstCard.dataset.cards,secondCard.dataset.cards)
 }
 
+//_____ Cards Match _____//
+function cardsMatch() {
+    firstCard.removeEventListener("click", flipCard);
+    secondCard.removeEventListener("click", flipCard);
+}
+
+//_____ Cards Dont Match _____//
+function cardsDontMatch() {
+
+    setTimeout(() => {
+        firstCard.classList.remove("flip");
+        secondCard.classList.remove("flip");
+    }, 1000);
+}
