@@ -1,5 +1,6 @@
 //_____ Elements _____//
 const cards = document.querySelectorAll(".game-card");
+const play = document.getElementById("play-again");
 
 //_____ Variables _____//
 
@@ -63,4 +64,18 @@ function resetCards() {
     console.log(firstCard, secondCard)
 }
 
+//_____ Shuffle Cards IIFE_____//
+(function shuffle() {
+    cards.forEach((card) => {
+        let randomPos = Math.floor(Math.random() * 12);
+        card.style.order = randomPos;
+    });
+})();
+
+//_____ Play Again_____//
+play.addEventListener("click", playAgain);
+
+function playAgain() {
+    location.reload();
+}
 
