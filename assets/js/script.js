@@ -8,11 +8,15 @@ const play = document.getElementById("play-again");
 //_____ Flip Card _____//
 let cardFlipped = false;
 let firstCard, secondCard;
+let lockCards = false;
 
 cards.forEach((card) => card.addEventListener("click", flipCard));
 
 function flipCard() {
-   this.classList.add("flip");
+    if (lockCards) return;
+    if (this === firstCard) return;
+
+    this.classList.add("flip");
 
     if (!cardFlipped) {
         cardFlipped = true;
@@ -45,6 +49,7 @@ function cardsMatch() {
 
 //_____ Cards Dont Match _____//
 function cardsDontMatch() {
+    lockCards = true;
 
     setTimeout(() => {
         firstCard.classList.remove("flip");
@@ -59,6 +64,7 @@ function cardsDontMatch() {
 //_____ Reset Cards _____//
 function resetCards() {
     cardFlipped = false;
+    lockCards = false;
     [firstCard, secondCard] = [null, null];
 
     console.log(firstCard, secondCard)
