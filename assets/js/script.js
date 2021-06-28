@@ -20,7 +20,6 @@ function flipCard() {
         return;
     }
 
-    cardFlipped = false;
     secondCard = this;
 
     checkCards();
@@ -31,14 +30,16 @@ function checkCards() {
     let isMatch = firstCard.dataset.cards === secondCard.dataset.cards;
 
     isMatch ? cardsMatch() : cardsDontMatch();
-
-    console.log(firstCard.dataset.cards,secondCard.dataset.cards)
 }
 
 //_____ Cards Match _____//
 function cardsMatch() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
+
+    console.log(firstCard, secondCard)
+
+    resetCards();
 }
 
 //_____ Cards Dont Match _____//
@@ -47,5 +48,19 @@ function cardsDontMatch() {
     setTimeout(() => {
         firstCard.classList.remove("flip");
         secondCard.classList.remove("flip");
+
+        console.log(firstCard, secondCard)
+
+        resetCards();
     }, 1000);
 }
+
+//_____ Reset Cards _____//
+function resetCards() {
+    cardFlipped = false;
+    [firstCard, secondCard] = [null, null];
+
+    console.log(firstCard, secondCard)
+}
+
+
