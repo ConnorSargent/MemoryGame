@@ -1,9 +1,10 @@
 //_____ Elements _____//
 const cards = document.querySelectorAll(".game-card");
 const play = document.getElementById("play-again");
+const score = document.getElementById("points");
 
 //_____ Variables _____//
-
+let points = 0;
 
 //_____ Flip Card _____//
 let cardFlipped = false;
@@ -14,7 +15,6 @@ cards.forEach((card) => card.addEventListener("click", flipCard));
 
 function flipCard() {
     if (lockCards) return;
-    if (this === firstCard) return;
 
     this.classList.add("flip");
 
@@ -24,6 +24,8 @@ function flipCard() {
 
         return;
     }
+
+    if (this === firstCard) return;
 
     secondCard = this;
 
@@ -42,7 +44,9 @@ function cardsMatch() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
 
-    console.log(firstCard, secondCard)
+    //Add points//
+    points += 2000;
+    score.innerHTML = points;
 
     resetCards();
 }
@@ -51,11 +55,13 @@ function cardsMatch() {
 function cardsDontMatch() {
     lockCards = true;
 
+    //Remove Points//
+    points -= 500;
+    score.innerHTML = points;
+
     setTimeout(() => {
         firstCard.classList.remove("flip");
         secondCard.classList.remove("flip");
-
-        console.log(firstCard, secondCard)
 
         resetCards();
     }, 1000);
@@ -84,4 +90,3 @@ play.addEventListener("click", playAgain);
 function playAgain() {
     location.reload();
 }
-
