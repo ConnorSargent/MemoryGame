@@ -155,7 +155,7 @@ body {
 }
 
 #win-message {
-    visibility: visible;
+    visibility: hidden;
     margin: auto;
     position: absolute;
     top: 60%;
