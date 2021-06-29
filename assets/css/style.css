@@ -171,4 +171,80 @@ body {
     z-index: 1;
 }
 
+/* ____________________________ Media Queries ____________________________ */
+/* Large Screens*/
+@media screen and (max-width: 1199px) {
+    .memory-game {
+        width: calc(100% - 200px);
+    }
+
+    .game-card {
+        height: 210px;
+        width: 150px;
+    }
+}
+
+/* laptops */
+@media screen and (max-width: 991px) {
+    .memory-game {
+        width: calc(100% - 100px);
+    }
+
+    .game-card {
+        height: 182px;
+        width: 130px;
+    }
+
+    .text-box {
+        width: 70%;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 767px) {
+    .memory-game {
+        width: 100%;
+    }
+
+    .game-card {
+        height: 154px;
+        width: 110px;
+    }
+
+    .welcome-card {
+        height: 294px;
+        width: 210px;
+    }
+
+    .text-box {
+        width: 80%;
+    }
+}
+
+/* Phones */
+@media screen and (max-width: 567px) {
+    .memory-game {
+        padding: 2px;
+    }
+
+    .game-card {
+        height: 140px;
+        width: 100px;
+        margin: 2px;
+    }
+
+    .welcome-card {
+        height: 266px;
+        width: 190px;
+    }
+
+    .text-box {
+        width: 90%;
+    }
+
+    .orange-text {
+        font-size: 30px;
+    }
+}
+
 
