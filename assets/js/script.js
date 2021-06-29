@@ -2,9 +2,11 @@
 const cards = document.querySelectorAll(".game-card");
 const play = document.getElementById("play-again");
 const score = document.getElementById("points");
+const win = document.getElementById("win-message");
 
 //_____ Variables _____//
 let points = 0;
+let allCardsMatch = 0;
 
 //_____ Flip Card _____//
 let cardFlipped = false;
@@ -47,6 +49,12 @@ function cardsMatch() {
     //Add points//
     points += 2000;
     score.innerHTML = points;
+
+    //All Cards Matched//
+    allCardsMatch += 2;
+    if (allCardsMatch === 12) {
+        win.style.visibility = "visible";
+    }
 
     resetCards();
 }
