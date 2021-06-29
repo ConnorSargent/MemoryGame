@@ -20,78 +20,87 @@
 
     <div class="container mx-auto">
 
-    <section class="text-center text-box blue-text">
-        <h1 class="orange-text">Mando's Memory Game</h1>
+        <section class="text-center text-box blue-text">
+            <h1 class="orange-text">Mando's Memory Game</h1>
 
-        <p>
-            CREDITS: <span id="points" class="aurebesh">0000</span><span class="aurebesh">$</span>
-        </p>
-    </section>
+            <div class="row">
+                <div class="col">
+                <p>
+                    Cards Matched: <span id="cardsMatched" class="aurebesh green-text">0</span><span class="aurebesh green-text">/12</span>
+                </p>
+                </div>
+                <div class="col">
+                    <p>
+                    CREDITS: <span id="points" class="aurebesh green-text">0000</span><span class="aurebesh green-text">$</span>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <section class="memory-game">
-        <!-- Card 1 -->
-        <div class="game-card" data-cards="card1">
-            <img class="game-card-front" src="assets/images/cards/mando&grogu_card.png"
-                alt="Din Djarin & Grogu Card" />
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <div class="game-card" data-cards="card1">
-            <img class="game-card-front" src="assets/images/cards/mando&grogu_card.png"
-                alt="Din Djarin & Grogu Card" />
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <!-- Card 2 -->
-        <div class="game-card" data-cards="card2">
-            <img class="game-card-front" src="assets/images/cards/gideon_card.png" alt="Moff Gideon Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <div class="game-card" data-cards="card2">
-            <img class="game-card-front" src="assets/images/cards/gideon_card.png" alt="Moff Gideon Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <!-- Card 3 -->
-        <div class="game-card" data-cards="card3">
-            <img class="game-card-front" src="assets/images/cards/ahsoka_card.png" alt="Ahsoka Tano Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <div class="game-card" data-cards="card3">
-            <img class="game-card-front" src="assets/images/cards/ahsoka_card.png" alt="Ahsoka Tano Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <!-- Card 4 -->
-        <div class="game-card" data-cards="card4">
-            <img class="game-card-front" src="assets/images/cards/darktrooper_card.png" alt="Dark Trooper Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <div class="game-card" data-cards="card4">
-            <img class="game-card-front" src="assets/images/cards/darktrooper_card.png" alt="Dark Trooper Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <!-- Card 5 -->
-        <div class="game-card" data-cards="card5">
-            <img class="game-card-front" src="assets/images/cards/boba_card.png" alt="Boba Fett Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <div class="game-card" data-cards="card5">
-            <img class="game-card-front" src="assets/images/cards/boba_card.png" alt="Boba Fett Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <!-- Card 6 -->
-        <div class="game-card" data-cards="card6">
-            <img class="game-card-front" src="assets/images/cards/bokatan_card.png" alt="Bo Katan Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-        <div class="game-card" data-cards="card6">
-            <img class="game-card-front" src="assets/images/cards/bokatan_card.png" alt="Bo Katan Card">
-            <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
-        </div>
-    </section>
+        <section class="memory-game">
+            <!-- Card 1 -->
+            <div class="game-card" data-cards="card1">
+                <img class="game-card-front" src="assets/images/cards/mando&grogu_card.png"
+                    alt="Din Djarin & Grogu Card" />
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <div class="game-card" data-cards="card1">
+                <img class="game-card-front" src="assets/images/cards/mando&grogu_card.png"
+                    alt="Din Djarin & Grogu Card" />
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <!-- Card 2 -->
+            <div class="game-card" data-cards="card2">
+                <img class="game-card-front" src="assets/images/cards/gideon_card.png" alt="Moff Gideon Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <div class="game-card" data-cards="card2">
+                <img class="game-card-front" src="assets/images/cards/gideon_card.png" alt="Moff Gideon Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <!-- Card 3 -->
+            <div class="game-card" data-cards="card3">
+                <img class="game-card-front" src="assets/images/cards/ahsoka_card.png" alt="Ahsoka Tano Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <div class="game-card" data-cards="card3">
+                <img class="game-card-front" src="assets/images/cards/ahsoka_card.png" alt="Ahsoka Tano Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <!-- Card 4 -->
+            <div class="game-card" data-cards="card4">
+                <img class="game-card-front" src="assets/images/cards/darktrooper_card.png" alt="Dark Trooper Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <div class="game-card" data-cards="card4">
+                <img class="game-card-front" src="assets/images/cards/darktrooper_card.png" alt="Dark Trooper Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <!-- Card 5 -->
+            <div class="game-card" data-cards="card5">
+                <img class="game-card-front" src="assets/images/cards/boba_card.png" alt="Boba Fett Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <div class="game-card" data-cards="card5">
+                <img class="game-card-front" src="assets/images/cards/boba_card.png" alt="Boba Fett Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <!-- Card 6 -->
+            <div class="game-card" data-cards="card6">
+                <img class="game-card-front" src="assets/images/cards/bokatan_card.png" alt="Bo Katan Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+            <div class="game-card" data-cards="card6">
+                <img class="game-card-front" src="assets/images/cards/bokatan_card.png" alt="Bo Katan Card">
+                <img class="game-card-back" src="assets/images/cards/sabbac_cardback.png" alt="Card back" />
+            </div>
+        </section>
     </div>
 
     <div id="win-message" class="text-center text-box blue-text my-auto">
         <h2 class="orange-text">GAME OVER</h2>
-        <p>Credits Earned: <span id="final-points" class="aurebesh">0000</span><span class="aurebesh">$</span></p>
-        <p>Play again to see if you can earn more credits <span class="aurebesh">$</span></p>
+        <p>Credits Earned: <span id="final-points" class="aurebesh green-text">0000</span><span class="aurebesh green-text">$</span></p>
+        <p>Play again to see if you can earn more credits <span class="aurebesh green-text">$</span></p>
         <button id="play-again" class="btn blue-text hvr-grow">Play again</button>
     </div>
 

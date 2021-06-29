@@ -4,11 +4,13 @@ const play = document.getElementById("play-again");
 const score = document.getElementById("points");
 const finalScore = document.getElementById("final-points");
 const win = document.getElementById("win-message");
+const correctMatches = document.getElementById("cardsMatched");
 
 //_____ Variables _____//
 let points = 0;
 let finalPoints = 0;
 let allCardsMatch = 0;
+let pairs = 0;
 
 //_____ Flip Card _____//
 let cardFlipped = false;
@@ -61,6 +63,10 @@ function cardsMatch() {
     if (allCardsMatch === 12) {
         win.style.visibility = "visible";
     }
+
+    //Cards Matched Counter//
+    pairs = allCardsMatch;
+    correctMatches.innerHTML = pairs;
 
     resetCards();
 }
