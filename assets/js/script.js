@@ -11,6 +11,8 @@ let points = 0;
 let finalPoints = 0;
 let allCardsMatch = 0;
 let pairs = 0;
+let bell = new Audio('assets/audio/the_mandalorian_bell.mp3');
+let gameOver = new Audio('assets/audio/this_is_the_way.mp3');
 
 //_____ Flip Card _____//
 let cardFlipped = false;
@@ -62,11 +64,14 @@ function cardsMatch() {
     allCardsMatch += 2;
     if (allCardsMatch === 12) {
         win.style.visibility = "visible";
+        gameOver.play();
     }
 
     //Cards Matched Counter//
     pairs = allCardsMatch;
     correctMatches.innerHTML = pairs;
+
+    bell.play();
 
     resetCards();
 }
