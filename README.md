@@ -78,6 +78,10 @@ JSHint was used to ensure there were no errors in the javascript files within th
 -   [JSHint](https://jshint.com) 
 <img src="documentation/screenshots/js_validator.PNG">
 
+When using JSHint to validate my code, I encountered a warning on line 47 "Expected an assignment or function call instead saw an expression." I think this is due to using a ternary operator as a if else statement, I originally did this because I thought it was cleaner and easier to follow but has now been changed to: 
+
+<img src="documentation/screenshots/checkcards_jshint.PNG">
+
 ### Lighthosue testing
 
 #### Desktop

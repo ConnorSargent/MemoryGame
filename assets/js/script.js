@@ -42,9 +42,11 @@ function flipCard() {
 
 //_____ Check Card _____//
 function checkCards() {
-    let isMatch = firstCard.dataset.cards === secondCard.dataset.cards;
-
-    isMatch ? cardsMatch() : cardsDontMatch();
+    if (firstCard.dataset.cards === secondCard.dataset.cards) {
+        cardsMatch()
+    } else {
+        cardsDontMatch()
+    }
 }
 
 //_____ Cards Match _____//
@@ -97,8 +99,6 @@ function resetCards() {
     cardFlipped = false;
     lockCards = false;
     [firstCard, secondCard] = [null, null];
-
-    console.log(firstCard, secondCard)
 }
 
 //_____ Shuffle Cards IIFE_____//
