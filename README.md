@@ -59,6 +59,8 @@ The primary goal of this project is to create a fun interactive memory game.
     - Hover.css was used for all the button grow animations.
 7. [realfavicongenerator:](https://realfavicongenerator.net/)
     - realfavicongenerator was used to generate favicons for all devices.
+8. [Autoprefixer CSS online](https://autoprefixer.github.io/)
+    - plugin which parses your CSS and adds vendor prefixes
 
 ## Testing
 
