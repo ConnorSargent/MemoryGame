@@ -1,6 +1,6 @@
 <h1 align="center">Star Wars Memory Game</h1>
 
-<img src="documentation/screenshots/responsive.PNG"> Responsive Screenshot
+<img src="documentation/screenshots/responsive.PNG">
 
 [View the live project here.](https://connorsargent.github.io/MemoryGame/)
 
